@@ -12,6 +12,8 @@
 #import "JSONManager.h"
 #import "Owner.h"
 #import "Dog.h"
+#define kNSUserDefaultsNavBarTintColor @"kNSUserDefaultsNavBarTintColor"
+
 
 @interface OwnerViewController () <UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
 
@@ -43,6 +45,11 @@
         self.ownerNames = [JSONManager loadJSON];
         [self addOwnersToDb];
     }
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSData *colorData = [userDefaults objectForKey:kNSUserDefaultsNavBarTintColor];
+    UIColor *color = [NSKeyedUnarchiver unarchiveObjectWithData:colorData];
+    self.navigationController.navigationBar.tintColor = color;
 
 }
 
@@ -80,22 +87,36 @@
 {
     //TODO: SAVE USER'S DEFAULT COLOR PREFERENCE USING THE CONDITIONAL BELOW
 
+    UIColor *color = [[UIColor alloc] init];
+
     if (buttonIndex == 0)
     {
-        self.navigationController.navigationBar.tintColor = [UIColor purpleColor];
+        color = [UIColor purpleColor];
     }
     else if (buttonIndex == 1)
     {
-        self.navigationController.navigationBar.tintColor = [UIColor blueColor];
+        color = [UIColor blueColor];
     }
     else if (buttonIndex == 2)
     {
-        self.navigationController.navigationBar.tintColor = [UIColor orangeColor];
+        color = [UIColor orangeColor];
     }
     else if (buttonIndex == 3)
     {
-        self.navigationController.navigationBar.tintColor = [UIColor greenColor];
+        color = [UIColor greenColor];
     }
+
+    self.navigationController.navigationBar.tintColor = color;
+
+//    NSURL *plistURL = [[self documentsDirectoryURL]URLByAppendingPathComponent:@"pastes.plist"];
+//    [self.adoredToothpaste writeToURL:plistURL atomically:YES];
+
+    NSData *colorData = [NSKeyedArchiver archivedDataWithRootObject:color];
+    [[NSUserDefaults standardUserDefaults] setObject:colorData forKey:kNSUserDefaultsNavBarTintColor];
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:colorData forKey:kNSUserDefaultsNavBarTintColor];
+    [userDefaults synchronize];
 
 }
 

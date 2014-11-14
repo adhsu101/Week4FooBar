@@ -54,6 +54,18 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
+    Dog *dog = self.dogs[indexPath.row];
+    NSMutableArray *array = [self.dogs mutableCopy];
+    [array removeObject:dog];
+    self.dogs = array;
+
+    // You might want to delete the object from your Data Store if you’re using CoreData
+    [self.owner.managedObjectContext deleteObject:dog];
+    [self.owner.managedObjectContext save:nil];
+    
+    // Animate the deletion
+    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+
 }
 
 #pragma mark - navigation
