@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D670C561A155B8000A46A32 /* JSONManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D670C551A155B8000A46A32 /* JSONManager.m */; };
+		8D670C591A155BD300A46A32 /* owners.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D670C581A155BD300A46A32 /* owners.json */; };
+		8D670C621A156C7E00A46A32 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D670C611A156C7E00A46A32 /* Dog.m */; };
+		8D670C651A156C7E00A46A32 /* Owner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D670C641A156C7E00A46A32 /* Owner.m */; };
+		8D670C681A15724700A46A32 /* DogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D670C671A15724700A46A32 /* DogTableViewCell.m */; };
 		93CD77B11999604D00D27E0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CD77B01999604D00D27E0A /* Foundation.framework */; };
 		93CD77B31999604D00D27E0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CD77B21999604D00D27E0A /* CoreGraphics.framework */; };
 		93CD77B51999604D00D27E0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CD77B41999604D00D27E0A /* UIKit.framework */; };
@@ -14,7 +19,7 @@
 		93CD77BD1999604D00D27E0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD77BC1999604D00D27E0A /* main.m */; };
 		93CD77C11999604D00D27E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD77C01999604D00D27E0A /* AppDelegate.m */; };
 		93CD77C41999604D00D27E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CD77C21999604D00D27E0A /* Main.storyboard */; };
-		93CD77C71999604D00D27E0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD77C61999604D00D27E0A /* ViewController.m */; };
+		93CD77C71999604D00D27E0A /* OwnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD77C61999604D00D27E0A /* OwnerViewController.m */; };
 		93CD77C91999604D00D27E0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CD77C81999604D00D27E0A /* Images.xcassets */; };
 		93CD77D01999604D00D27E0A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CD77CF1999604D00D27E0A /* XCTest.framework */; };
 		93CD77D11999604D00D27E0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CD77B01999604D00D27E0A /* Foundation.framework */; };
@@ -37,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D670C541A155B8000A46A32 /* JSONManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONManager.h; sourceTree = "<group>"; };
+		8D670C551A155B8000A46A32 /* JSONManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONManager.m; sourceTree = "<group>"; };
+		8D670C581A155BD300A46A32 /* owners.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = owners.json; sourceTree = "<group>"; };
+		8D670C601A156C7E00A46A32 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dog.h; path = ../Dog.h; sourceTree = "<group>"; };
+		8D670C611A156C7E00A46A32 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dog.m; path = ../Dog.m; sourceTree = "<group>"; };
+		8D670C631A156C7E00A46A32 /* Owner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Owner.h; path = ../Owner.h; sourceTree = "<group>"; };
+		8D670C641A156C7E00A46A32 /* Owner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Owner.m; path = ../Owner.m; sourceTree = "<group>"; };
+		8D670C661A15724700A46A32 /* DogTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DogTableViewCell.h; path = ../DogTableViewCell.h; sourceTree = "<group>"; };
+		8D670C671A15724700A46A32 /* DogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DogTableViewCell.m; path = ../DogTableViewCell.m; sourceTree = "<group>"; };
 		93CD77AD1999604D00D27E0A /* Assessment4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CD77B01999604D00D27E0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93CD77B21999604D00D27E0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,8 +62,8 @@
 		93CD77BF1999604D00D27E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93CD77C01999604D00D27E0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		93CD77C31999604D00D27E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		93CD77C51999604D00D27E0A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		93CD77C61999604D00D27E0A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		93CD77C51999604D00D27E0A /* OwnerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OwnerViewController.h; sourceTree = "<group>"; };
+		93CD77C61999604D00D27E0A /* OwnerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OwnerViewController.m; sourceTree = "<group>"; };
 		93CD77C81999604D00D27E0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93CD77CE1999604D00D27E0A /* Assessment4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assessment4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CD77CF1999604D00D27E0A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -87,9 +101,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D670C571A155B8D00A46A32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D670C631A156C7E00A46A32 /* Owner.h */,
+				8D670C641A156C7E00A46A32 /* Owner.m */,
+				8D670C601A156C7E00A46A32 /* Dog.h */,
+				8D670C611A156C7E00A46A32 /* Dog.m */,
+				8D670C541A155B8000A46A32 /* JSONManager.h */,
+				8D670C551A155B8000A46A32 /* JSONManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		93CD77A41999604D00D27E0A = {
 			isa = PBXGroup;
 			children = (
+				93CD77C21999604D00D27E0A /* Main.storyboard */,
 				93CD77B61999604D00D27E0A /* Assessment4 */,
 				93CD77D51999604D00D27E0A /* Assessment4Tests */,
 				93CD77AF1999604D00D27E0A /* Frameworks */,
@@ -122,13 +150,15 @@
 			children = (
 				93CD77BF1999604D00D27E0A /* AppDelegate.h */,
 				93CD77C01999604D00D27E0A /* AppDelegate.m */,
-				93CD77C21999604D00D27E0A /* Main.storyboard */,
-				93CD77C51999604D00D27E0A /* ViewController.h */,
-				93CD77C61999604D00D27E0A /* ViewController.m */,
+				93CD77C51999604D00D27E0A /* OwnerViewController.h */,
+				93CD77C61999604D00D27E0A /* OwnerViewController.m */,
 				93CD77E5199962E900D27E0A /* DogsViewController.h */,
 				93CD77E6199962E900D27E0A /* DogsViewController.m */,
 				93CD77E81999642A00D27E0A /* AddDogViewController.h */,
 				93CD77E91999642A00D27E0A /* AddDogViewController.m */,
+				8D670C661A15724700A46A32 /* DogTableViewCell.h */,
+				8D670C671A15724700A46A32 /* DogTableViewCell.m */,
+				8D670C571A155B8D00A46A32 /* Model */,
 				93CD77C81999604D00D27E0A /* Images.xcassets */,
 				93CD77EB199964A100D27E0A /* Model.xcdatamodeld */,
 				93CD77B71999604D00D27E0A /* Supporting Files */,
@@ -139,6 +169,7 @@
 		93CD77B71999604D00D27E0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8D670C581A155BD300A46A32 /* owners.json */,
 				93CD77B81999604D00D27E0A /* Assessment4-Info.plist */,
 				93CD77B91999604D00D27E0A /* InfoPlist.strings */,
 				93CD77BC1999604D00D27E0A /* main.m */,
@@ -242,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93CD77C91999604D00D27E0A /* Images.xcassets in Resources */,
+				8D670C591A155BD300A46A32 /* owners.json in Resources */,
 				93CD77BB1999604D00D27E0A /* InfoPlist.strings in Resources */,
 				93CD77C41999604D00D27E0A /* Main.storyboard in Resources */,
 			);
@@ -262,10 +294,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93CD77C71999604D00D27E0A /* ViewController.m in Sources */,
+				8D670C561A155B8000A46A32 /* JSONManager.m in Sources */,
+				93CD77C71999604D00D27E0A /* OwnerViewController.m in Sources */,
+				8D670C621A156C7E00A46A32 /* Dog.m in Sources */,
 				93CD77C11999604D00D27E0A /* AppDelegate.m in Sources */,
 				93CD77BD1999604D00D27E0A /* main.m in Sources */,
 				93CD77EA1999642A00D27E0A /* AddDogViewController.m in Sources */,
+				8D670C681A15724700A46A32 /* DogTableViewCell.m in Sources */,
+				8D670C651A156C7E00A46A32 /* Owner.m in Sources */,
 				93CD77E7199962E900D27E0A /* DogsViewController.m in Sources */,
 				93CD77ED199964A100D27E0A /* Model.xcdatamodeld in Sources */,
 			);
@@ -304,6 +340,7 @@
 				93CD77C31999604D00D27E0A /* Base */,
 			);
 			name = Main.storyboard;
+			path = Assessment4;
 			sourceTree = "<group>";
 		};
 		93CD77D81999604D00D27E0A /* InfoPlist.strings */ = {
@@ -472,6 +509,7 @@
 				93CD77E11999604D00D27E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93CD77E21999604D00D27E0A /* Build configuration list for PBXNativeTarget "Assessment4Tests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +518,7 @@
 				93CD77E41999604D00D27E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface OwnerViewController : UIViewController
+
+@property NSManagedObjectContext *managedObjectContext;
+
+
 
 @end
